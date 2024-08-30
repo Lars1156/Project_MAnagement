@@ -5,7 +5,7 @@ const {connection} = require('./connection')
 const app = express();
 
 // Database Connection 
-connection('').then(()=>{
+connection('mongodb://localhost:27017/Project_Management').then(()=>{
     console.log("Database Connection Successfully");
 }).catch((error)=>{
     console.log("Database connection Failed", error);

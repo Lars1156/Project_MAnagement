@@ -1,6 +1,6 @@
 const userServices = require('../services/userServices');
 
-exports.userController = async (req, res)=>{
+exports.loginUser = async (req, res)=>{
     const { email, password } = req.body;
      console.log("**User Data** " , req.body);
       try {
